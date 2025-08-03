@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Symptom Checker</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1588776814546-6dfb08b35730') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h2 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 16px;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #0072ff, #00c6ff);
+        }
+
+        .result {
+            margin-top: 30px;
+            background-color: #e3fcec;
+            border-left: 6px solid #28a745;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #2e7d32;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .suggestion {
+            margin-top: 15px;
+            background-color: #fff3cd;
+            border-left: 6px solid #ffc107;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #856404;
+            font-weight: 500;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🩺 AI Symptom Checker</h2>
+        <form method="POST" action="/predict">
+            <label for="symptoms">Enter your symptoms (comma separated):</label>
+            <textarea name="symptoms" rows="5" placeholder="e.g. fever, cough, headache" required></textarea>
+            <button type="submit">Check</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            🧠 <strong>Predicted Condition:</strong> {{ prediction }}
+        </div>
+        {% endif %}
+
+        {% if suggestion %}
+        <div class="suggestion">
+            💡 <strong>Suggested Action:</strong> {{ suggestion }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
