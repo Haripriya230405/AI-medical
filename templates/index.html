@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Symptom Checker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #e0f0ff, #c2e0ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        .container {
+            position: relative;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(15px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            width: 600px;
+            max-width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            color: #1b2a47;
+        }
+        h2 {
+            margin-bottom: 25px;
+            font-size: 32px;
+            color: #1b2a47;
+            letter-spacing: 1px;
+        }
+        .user-welcome {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .form-group { position: relative; margin-bottom: 25px; }
+        textarea {
+            width: 100%;
+            padding: 14px 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 16px;
+            background: #fdfdfd;
+            color: #1b2a47;
+            resize: none;
+        }
+        .form-group label {
+            position: absolute;
+            top: 14px;
+            left: 12px;
+            color: #888;
+            font-size: 16px;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+        textarea:focus + label,
+        textarea:not(:placeholder-shown) + label {
+            top: -10px;
+            left: 10px;
+            font-size: 12px;
+            background: #c2e0ff;
+            padding: 0 6px;
+            border-radius: 4px;
+            color: #1b2a47;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background: #1b2a47;
+            color: white;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #3a4f7a;
+        }
+        .card {
+            margin-top: 20px;
+            padding: 18px 22px;
+            border-radius: 12px;
+            text-align: left;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            background: #fdfdfd;
+            color: #1b2a47;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideFadeIn 0.6s forwards;
+        }
+        .result { border-left: 6px solid #4caf50; }
+        .suggestion { border-left: 6px solid #ffb300; }
+        .accuracy { border-left: 6px solid #2196f3; }
+        @keyframes slideFadeIn { to { opacity: 1; transform: translateY(0); } }
+
+        /* Floating buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+        .icon-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: none;
+            background: #fdfdfd;
+            color: #1b2a47;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            transition: all 0.3s;
+        }
+        .icon-btn:hover {
+            background: #1b2a47;
+            color: white;
+            transform: translateY(-3px);
+        }
+        .card i { margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🩺 AI Symptom Checker</h2>
+
+        {% if user_name %}
+        <div class="user-welcome">👋 Welcome, {{ user_name }}!</div>
+        {% endif %}
+
+        <form method="POST" action="/predict">
+            <div class="form-group">
+                <textarea name="symptoms" rows="5" placeholder=" " required></textarea>
+                <label>Enter your symptoms (comma separated)</label>
+            </div>
+            <button type="submit">Check Symptoms</button>
+        </form>
+
+        {% if user_symptoms %}
+        <div class="card result">
+            <i class="fa-solid fa-notes-medical"></i> <strong>Your Symptoms:</strong> {{ user_symptoms }}
+        </div>
+        {% endif %}
+
+        {% if prediction %}
+        <div class="card result" style="animation-delay: 0.1s;">
+            <i class="fa-solid fa-brain"></i> <strong>Predicted Condition:</strong> {{ prediction }}
+        </div>
+        {% endif %}
+
+        {% if suggestion %}
+        <div class="card suggestion" style="animation-delay: 0.2s;">
+            <i class="fa-solid fa-lightbulb"></i> <strong>Suggested Tips:</strong>
+            <ol>
+                {% for tip in suggestion %}
+                <li><i class="fa-solid fa-circle-check"></i> {{ tip }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+        {% endif %}
+
+        {% if accuracy %}
+        <div class="card accuracy" style="animation-delay: 0.3s;">
+            <i class="fa-solid fa-trophy"></i> <strong>Best Model:</strong> {{ best_model }}<br>
+            🔍 <strong>Accuracy:</strong> {{ accuracy }}%
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="floating-buttons">
+        <a href="/history" class="icon-btn" title="Prediction History"><i class="fa-solid fa-clock-rotate-left"></i></a>
+        <a href="/visualization" class="icon-btn" title="Dataset Visualization"><i class="fa-solid fa-chart-column"></i></a>
+        <a href="/confusion" class="icon-btn" title="Confusion Matrix"><i class="fa-solid fa-border-all"></i></a>
+    </div>
+</body>
+</html>

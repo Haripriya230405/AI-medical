@@ -1,0 +1,150 @@
+--- decision_tree ---
+                                         precision    recall  f1-score   support
+
+(vertigo) Paroymsal  Positional Vertigo       0.03      1.00      0.05        30
+                                   AIDS       0.00      0.00      0.00        30
+                                   Acne       0.00      0.00      0.00        30
+                    Alcoholic hepatitis       0.00      0.00      0.00        30
+                                Allergy       0.00      0.00      0.00        30
+                              Arthritis       0.00      0.00      0.00        30
+                       Bronchial Asthma       0.00      0.00      0.00        30
+                   Cervical spondylosis       0.00      0.00      0.00        30
+                            Chicken pox       0.00      0.00      0.00        30
+                    Chronic cholestasis       0.00      0.00      0.00        30
+                            Common Cold       1.00      1.00      1.00        30
+                                 Dengue       1.00      1.00      1.00        30
+                              Diabetes        1.00      1.00      1.00        30
+           Dimorphic hemmorhoids(piles)       0.00      0.00      0.00        30
+                          Drug Reaction       0.00      0.00      0.00        30
+                       Fungal infection       0.00      0.00      0.00        30
+                                   GERD       0.00      0.00      0.00        30
+                        Gastroenteritis       0.00      0.00      0.00        30
+                           Heart attack       0.00      0.00      0.00        30
+                            Hepatitis B       0.00      0.00      0.00        30
+                            Hepatitis C       0.00      0.00      0.00        30
+                            Hepatitis D       0.00      0.00      0.00        30
+                            Hepatitis E       0.00      0.00      0.00        30
+                          Hypertension        0.00      0.00      0.00        30
+                        Hyperthyroidism       0.00      0.00      0.00        30
+                           Hypoglycemia       1.00      1.00      1.00        30
+                         Hypothyroidism       1.00      1.00      1.00        30
+                               Impetigo       0.00      0.00      0.00        30
+                               Jaundice       0.00      0.00      0.00        30
+                                Malaria       0.00      0.00      0.00        30
+                               Migraine       0.00      0.00      0.00        30
+                        Osteoarthristis       0.00      0.00      0.00        30
+           Paralysis (brain hemorrhage)       0.00      0.00      0.00        30
+                    Peptic ulcer diseae       0.00      0.00      0.00        30
+                              Pneumonia       0.00      0.00      0.00        30
+                              Psoriasis       0.00      0.00      0.00        30
+                           Tuberculosis       0.00      0.00      0.00        30
+                                Typhoid       0.00      0.00      0.00        30
+                Urinary tract infection       0.00      0.00      0.00        30
+                         Varicose veins       0.00      0.00      0.00        30
+                            hepatitis A       0.00      0.00      0.00        30
+
+                               accuracy                           0.15      1230
+                              macro avg       0.12      0.15      0.12      1230
+                           weighted avg       0.12      0.15      0.12      1230
+
+
+--- rf ---
+                                         precision    recall  f1-score   support
+
+(vertigo) Paroymsal  Positional Vertigo       1.00      1.00      1.00        30
+                                   AIDS       1.00      1.00      1.00        30
+                                   Acne       1.00      1.00      1.00        30
+                    Alcoholic hepatitis       1.00      1.00      1.00        30
+                                Allergy       1.00      1.00      1.00        30
+                              Arthritis       1.00      1.00      1.00        30
+                       Bronchial Asthma       1.00      1.00      1.00        30
+                   Cervical spondylosis       1.00      1.00      1.00        30
+                            Chicken pox       1.00      1.00      1.00        30
+                    Chronic cholestasis       1.00      0.93      0.97        30
+                            Common Cold       1.00      1.00      1.00        30
+                                 Dengue       1.00      1.00      1.00        30
+                              Diabetes        1.00      1.00      1.00        30
+           Dimorphic hemmorhoids(piles)       1.00      1.00      1.00        30
+                          Drug Reaction       1.00      1.00      1.00        30
+                       Fungal infection       1.00      1.00      1.00        30
+                                   GERD       1.00      1.00      1.00        30
+                        Gastroenteritis       1.00      1.00      1.00        30
+                           Heart attack       1.00      1.00      1.00        30
+                            Hepatitis B       1.00      1.00      1.00        30
+                            Hepatitis C       1.00      1.00      1.00        30
+                            Hepatitis D       0.94      1.00      0.97        30
+                            Hepatitis E       1.00      1.00      1.00        30
+                          Hypertension        1.00      1.00      1.00        30
+                        Hyperthyroidism       1.00      1.00      1.00        30
+                           Hypoglycemia       1.00      1.00      1.00        30
+                         Hypothyroidism       1.00      1.00      1.00        30
+                               Impetigo       1.00      1.00      1.00        30
+                               Jaundice       1.00      1.00      1.00        30
+                                Malaria       1.00      1.00      1.00        30
+                               Migraine       1.00      1.00      1.00        30
+                        Osteoarthristis       1.00      1.00      1.00        30
+           Paralysis (brain hemorrhage)       1.00      1.00      1.00        30
+                    Peptic ulcer diseae       1.00      1.00      1.00        30
+                              Pneumonia       1.00      1.00      1.00        30
+                              Psoriasis       1.00      1.00      1.00        30
+                           Tuberculosis       1.00      1.00      1.00        30
+                                Typhoid       1.00      1.00      1.00        30
+                Urinary tract infection       1.00      1.00      1.00        30
+                         Varicose veins       1.00      1.00      1.00        30
+                            hepatitis A       1.00      1.00      1.00        30
+
+                               accuracy                           1.00      1230
+                              macro avg       1.00      1.00      1.00      1230
+                           weighted avg       1.00      1.00      1.00      1230
+
+
+--- ensemble ---
+                                         precision    recall  f1-score   support
+
+(vertigo) Paroymsal  Positional Vertigo       1.00      1.00      1.00        30
+                                   AIDS       1.00      1.00      1.00        30
+                                   Acne       1.00      1.00      1.00        30
+                    Alcoholic hepatitis       1.00      1.00      1.00        30
+                                Allergy       1.00      1.00      1.00        30
+                              Arthritis       1.00      1.00      1.00        30
+                       Bronchial Asthma       1.00      1.00      1.00        30
+                   Cervical spondylosis       1.00      1.00      1.00        30
+                            Chicken pox       1.00      1.00      1.00        30
+                    Chronic cholestasis       1.00      0.93      0.97        30
+                            Common Cold       1.00      1.00      1.00        30
+                                 Dengue       1.00      1.00      1.00        30
+                              Diabetes        1.00      1.00      1.00        30
+           Dimorphic hemmorhoids(piles)       1.00      1.00      1.00        30
+                          Drug Reaction       1.00      1.00      1.00        30
+                       Fungal infection       1.00      1.00      1.00        30
+                                   GERD       1.00      1.00      1.00        30
+                        Gastroenteritis       1.00      1.00      1.00        30
+                           Heart attack       1.00      1.00      1.00        30
+                            Hepatitis B       1.00      1.00      1.00        30
+                            Hepatitis C       1.00      1.00      1.00        30
+                            Hepatitis D       0.94      1.00      0.97        30
+                            Hepatitis E       1.00      1.00      1.00        30
+                          Hypertension        1.00      1.00      1.00        30
+                        Hyperthyroidism       1.00      1.00      1.00        30
+                           Hypoglycemia       1.00      1.00      1.00        30
+                         Hypothyroidism       1.00      1.00      1.00        30
+                               Impetigo       1.00      1.00      1.00        30
+                               Jaundice       1.00      1.00      1.00        30
+                                Malaria       1.00      1.00      1.00        30
+                               Migraine       1.00      1.00      1.00        30
+                        Osteoarthristis       1.00      1.00      1.00        30
+           Paralysis (brain hemorrhage)       1.00      1.00      1.00        30
+                    Peptic ulcer diseae       1.00      1.00      1.00        30
+                              Pneumonia       1.00      1.00      1.00        30
+                              Psoriasis       1.00      1.00      1.00        30
+                           Tuberculosis       1.00      1.00      1.00        30
+                                Typhoid       1.00      1.00      1.00        30
+                Urinary tract infection       1.00      1.00      1.00        30
+                         Varicose veins       1.00      1.00      1.00        30
+                            hepatitis A       1.00      1.00      1.00        30
+
+                               accuracy                           1.00      1230
+                              macro avg       1.00      1.00      1.00      1230
+                           weighted avg       1.00      1.00      1.00      1230
+
+

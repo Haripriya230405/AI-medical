@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confusion Matrix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8fb;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .matrix-container {
+            margin: 20px auto;
+            max-width: 900px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+
+        .report-container {
+            margin: 20px auto;
+            max-width: 900px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            text-align: left;
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 14px;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>📊 Confusion Matrix</h2>
+
+    <div class="matrix-container">
+        <img src="data:image/png;base64,{{ plot_url }}" alt="Confusion Matrix">
+    </div>
+
+    <a href="/symptom">⬅ Back to Symptom Checker</a>
+</body>
+</html>

@@ -1,0 +1,59 @@
+Timestamp,Symptoms,Predicted Disease,Suggested Tips
+2025-08-07 18:46:33,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-07 18:46:50,headache,Migraine,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-07 18:49:02,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-07 18:53:07,vomiting,GERD,Stay hydrated with ORS or coconut water. | Avoid solid food until vomiting subsides. | Consult a doctor if it persists more than 24 hours.
+2025-08-07 19:21:20,headache,Migraine,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-07 19:22:30,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-07 19:28:33,headache,Migraine,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-07 19:29:32,headache,Migraine,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-07 20:11:16,headache,Migraine,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-07 20:26:52,fatigue,Varicose veins,Get 7–8 hours of sleep. | Eat fruits and iron-rich food. | Reduce physical and mental exertion.
+2025-08-10 10:59:36,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-12 10:39:22,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-12 11:56:19,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-12 11:58:19,headache,Migraine,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-12 13:51:03,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-12 14:19:55,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-12 14:48:56,headache,Migraine,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-12 14:51:41,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-14 11:16:11,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-14 11:26:33,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-14 11:29:22,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-14 13:55:25,high_fever,AIDS,Please consult a doctor for proper diagnosis and treatment.
+2025-08-23 10:43:13,cough,Drug Reaction,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 14:23:03,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 14:23:41,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 14:32:29,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 15:09:54,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 15:14:10,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 15:23:18,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 15:25:48,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 15:38:25,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 15:41:11,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-28 15:48:14,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-29 10:39:23,cough,GERD,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-29 10:55:29,high_fever,Heart attack,Please consult a doctor for proper diagnosis and treatment.
+2025-08-29 11:06:10,cough,Heart attack,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-29 11:07:37,cough,Heart attack,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-29 11:07:52,cough,Heart attack,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-29 11:08:20,headache,Heart attack,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-29 11:09:46,headache,Heart attack,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-29 11:10:05,stomach_pain,Drug Reaction,Please consult a doctor for proper diagnosis and treatment.
+2025-08-29 11:10:20,vomiting,Heart attack,Stay hydrated with ORS or coconut water. | Avoid solid food until vomiting subsides. | Consult a doctor if it persists more than 24 hours.
+2025-08-29 11:13:28,shivering,Allergy,Please consult a doctor for proper diagnosis and treatment.
+2025-08-29 11:14:40,itching,Drug Reaction,Please consult a doctor for proper diagnosis and treatment.
+2025-08-29 11:23:30,skin_rash,Acne,Apply soothing lotions or creams like aloe vera. | Avoid harsh soaps and irritants. | Consult a doctor if the rash persists or spreads.
+2025-08-29 12:36:34,stomach_pain,Drug Reaction,Please consult a doctor for proper diagnosis and treatment.
+2025-08-29 12:59:52,cough,Heart attack,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-29 13:35:08,cough,Heart attack,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-29 13:35:25,headache,Heart attack,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-29 13:39:58,vomiting,Heart attack,Stay hydrated with ORS or coconut water. | Avoid solid food until vomiting subsides. | Consult a doctor if it persists more than 24 hours.
+2025-08-29 13:40:10,stomach_pain,Drug Reaction,Please consult a doctor for proper diagnosis and treatment.
+2025-08-29 13:40:27,itching,Drug Reaction,Apply anti-itch creams or ointments. | Avoid scratching the affected area. | Take antihistamines if recommended.
+2025-08-29 13:41:10,headache,Heart attack,"Rest in a quiet, dark room. | Take mild pain relief like paracetamol. | Stay hydrated and avoid screen time."
+2025-08-29 13:52:36,cough,Heart attack,Drink warm fluids like soup or tea. | Use cough syrups or lozenges as needed. | Avoid cold drinks and dusty environments.
+2025-08-29 13:56:02,weight_loss,Jaundice,Ensure you have a balanced and nutritious diet. | Consult a healthcare professional for underlying causes. | Monitor your weight regularly.
+2025-08-29 13:56:34,mood_swings,Hyperthyroidism,Practice relaxation techniques like meditation or deep breathing. | Engage in light physical activity. | Maintain a healthy sleep and diet routine.
+2025-08-29 13:57:13,acidity,Migraine,Please consult a doctor for proper diagnosis and treatment.
+2025-08-29 13:57:38,shivering,Allergy,Keep yourself warm with blankets or warm clothing. | Drink warm fluids. | Rest and monitor your temperature.
