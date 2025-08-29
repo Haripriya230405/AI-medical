@@ -1,7 +1,0 @@
-flask
-numpy
-pandas
-scikit-learn
-nltk
-SpeechRecognition
-matplotlib 
